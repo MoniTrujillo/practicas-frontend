@@ -1,0 +1,30 @@
+:root {
+    --color-primario: rgb(231, 169, 236);
+    --font-size-grande: 32px;
+    --font-size-mediano: 24px;
+    --font-size-chico: 18px;
+    --transition-rapida: 0.3s;
+}
+
+h1 {
+    color: var(--color-primario);
+    font-size: var(--font-size-grande);
+}
+
+h2 {
+    color: var(--color-primario);
+    font-size: var(--font-size-mediano);
+}
+
+h3 {
+    color: var(--color-primario);
+    font-size: var(--font-size-chico);
+}
+
+button {
+    transition: var(--transition-rapida);
+}
+
+button:hover {
+    transform: scale(1.2);
+}
