@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3 - Responsive, estados y dark mode</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            DEFAULT: '#1d4ed8',
+                            dark: '#1e3a8a',
+                        },
+                        secondary: {
+                            DEFAULT: '#f59e0b',
+                        },
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-gray-100 dark:bg-gray-900 min-h-screen p-4 font-sans transition-colors">
+
+    <button
+        type="button"
+        onclick="document.documentElement.classList.toggle('dark')"
+        class="mb-6 bg-gray-800 text-white px-4 py-2 rounded-md"
+    >
+        Cambiar modo oscuro
+    </button>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+
+        <article class="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden">
+            <img src="https://i.pinimg.com/736x/69/b5/ff/69b5ff07c69e09dbd365e4c31ede133d.jpg" alt="Pay de queso" class="w-full h-48 object-cover">
+            <div class="p-4">
+                <h2 class="text-lg font-bold text-gray-800 dark:text-white">Pay de queso</h2>
+                <p class="text-gray-600 dark:text-gray-300 text-sm mt-1">Delicioso pay de queso cremoso.</p>
+                <p class="text-xl font-semibold text-gray-900 dark:text-white mt-3">$89.00</p>
+                <button type="button" class="mt-4 w-full bg-primary text-white py-2 rounded-md hover:bg-primary-dark focus-visible:ring-2 focus-visible:ring-secondary transition">
+                    Añadir al carrito
+                </button>
+            </div>
+        </article>
+
+        <article class="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden">
+            <img src="https://i.pinimg.com/736x/3e/ed/4a/3eed4a8642e8b98c2c8ede6c54a43b71.jpg" alt="Chocolate" class="w-full h-48 object-cover">
+            <div class="p-4">
+                <h2 class="text-lg font-bold text-gray-800 dark:text-white">Pastel de chocolate</h2>
+                <p class="text-gray-600 dark:text-gray-300 text-sm mt-1">Intenso sabor a cacao.</p>
+                <p class="text-xl font-semibold text-gray-900 dark:text-white mt-3">$95.00</p>
+                <!-- Este botón queda deshabilitado, para ver la variante disabled: -->
+                <button type="button" disabled class="mt-4 w-full bg-primary text-white py-2 rounded-md hover:bg-primary-dark focus-visible:ring-2 focus-visible:ring-secondary disabled:opacity-50 disabled:cursor-not-allowed transition">
+                    Sin stock
+                </button>
+            </div>
+        </article>
+
+        <article class="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden">
+            <img src="https://i.pinimg.com/736x/6b/4c/0b/6b4c0babf93c656970c14db9d526ebbc.jpg" alt="Bisquet" class="w-full h-48 object-cover">
+            <div class="p-4">
+                <h2 class="text-lg font-bold text-gray-800 dark:text-white">Bisquet</h2>
+                <p class="text-gray-600 dark:text-gray-300 text-sm mt-1">Recién horneado.</p>
+                <p class="text-xl font-semibold text-gray-900 dark:text-white mt-3">$25.00</p>
+                <button type="button" class="mt-4 w-full bg-primary text-white py-2 rounded-md hover:bg-primary-dark focus-visible:ring-2 focus-visible:ring-secondary transition">
+                    Añadir al carrito
+                </button>
+            </div>
+        </article>
+
+    </div>
+
+</body>
+</html>
