@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1 - Tailwind Card</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center p-4">
+
+    <article class="w-full md:max-w-sm bg-white rounded-lg shadow-md overflow-hidden">
+        <img
+            src="https://i.pinimg.com/736x/69/b5/ff/69b5ff07c69e09dbd365e4c31ede133d.jpg"
+            alt="Pay de queso"
+            class="w-full h-48 object-cover"
+        >
+        <div class="p-4">
+            <h2 class="text-lg font-bold text-gray-800">Pay de queso</h2>
+            <p class="text-gray-600 text-sm mt-1">
+                Delicioso pay de queso cremoso, ideal para acompañar con café.
+            </p>
+            <p class="text-xl font-semibold text-gray-900 mt-3">$89.00</p>
+            <button
+                type="button"
+                class="mt-4 w-full bg-blue-600 text-white py-2 rounded-md
+                       hover:bg-blue-700
+                       focus-visible:ring-2 focus-visible:ring-blue-400 focus-visible:ring-offset-2
+                       active:scale-95
+                       transition"
+            >
+                Añadir al carrito
+            </button>
+        </div>
+    </article>
+
+</body>
+</html>
