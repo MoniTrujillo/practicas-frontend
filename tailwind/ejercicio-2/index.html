@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2 - Tailwind Theme</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        // El array "content" le dice a Tailwind en qué archivos debe buscar
+        // las clases que usaste, para generar SOLO el CSS de esas clases
+        // (y no de todas las que existen). Si una ruta se queda fuera,
+        // Tailwind no encuentra las clases usadas ahí, y esos estilos
+        // simplemente no se aplican (el elemento se ve "sin estilo").
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            DEFAULT: '#1d4ed8',
+                            dark: '#1e3a8a',
+                        },
+                        secondary: {
+                            DEFAULT: '#f59e0b',
+                            dark: '#b45309',
+                        },
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    spacing: {
+                        18: '4.5rem',
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center p-4 font-sans">
+
+    <article class="w-full md:max-w-sm bg-white rounded-lg shadow-md overflow-hidden">
+        <img
+            src="https://i.pinimg.com/736x/69/b5/ff/69b5ff07c69e09dbd365e4c31ede133d.jpg"
+            alt="Pay de queso"
+            class="w-full h-48 object-cover"
+        >
+        <div class="p-18">
+            <h2 class="text-lg font-bold text-gray-800">Pay de queso</h2>
+            <p class="text-gray-600 text-sm mt-1">
+                Delicioso pay de queso cremoso, ideal para acompañar con café.
+            </p>
+            <p class="text-xl font-semibold text-gray-900 mt-3">$89.00</p>
+            <button
+                type="button"
+                class="mt-4 w-full bg-primary text-white py-2 rounded-md
+                       hover:bg-primary-dark
+                       focus-visible:ring-2 focus-visible:ring-secondary focus-visible:ring-offset-2
+                       active:scale-95
+                       transition"
+            >
+                Añadir al carrito
+            </button>
+        </div>
+    </article>
+
+</body>
+</html>
