@@ -14,7 +14,7 @@ function decrement() {
   <div>
     <TheTitle>Contador</TheTitle>
     <p>{{ count }}</p>
-    <button @click="increment">Increment</button>
-    <button @click="decrement">Decrement</button>
+    <button v-if="count > 0" class="rounded bg-brand px-4 py-2 text-white" @click="decrement">Decrement</button>
+    <button v-if="count < 10" class="rounded bg-brand px-4 py-2 text-white" @click="increment">Increment</button>
   </div>
 </template>
