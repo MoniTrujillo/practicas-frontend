@@ -5,7 +5,7 @@ const { count, increment, decrement, reset } = useCounter()
 <template>
   <div>
     <TheTitle>Contador</TheTitle>
-    <p>{{ count }}</p>
+    <p :class="{ 'text-green-500': count >= 10 }">{{ count }}</p>
     <div class="flex gap-2">
       <button v-if="count > 0" class="rounded bg-brand px-4 py-2 text-white" @click="decrement">Decrement</button>
       <button v-if="count < 10" class="rounded bg-brand px-4 py-2 text-white" @click="increment">Increment</button>
