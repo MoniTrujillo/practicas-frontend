@@ -1,5 +1,3 @@
 <template>
-  <NuxtLayout>
-    <TheCounter />
-  </NuxtLayout>
+  <NuxtPage />
 </template>
