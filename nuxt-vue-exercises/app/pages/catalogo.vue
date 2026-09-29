@@ -1,10 +1,14 @@
 <script setup lang="ts">
 import { products } from '~/data/mock'
+import { useCounterStore } from '~/stores/counter'
+
+const counter = useCounterStore()
 </script>
 
 <template>
   <div class="p-4">
     <TheTitle>Catálogo</TheTitle>
+    <p>Contador: {{ counter.count }}</p>
     <div class="my-4 grid gap-4 sm:grid-cols-3">
       <ProductCard
         v-for="product in products"

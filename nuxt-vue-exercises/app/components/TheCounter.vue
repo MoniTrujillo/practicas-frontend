@@ -1,7 +1,10 @@
 <script setup lang="ts">
-const { count, increment, decrement, reset } = useCounter()
+import { storeToRefs } from 'pinia'
+import { useCounterStore } from '~/stores/counter'
 
-const doubled = computed(() => count.value * 2)
+const counter = useCounterStore()
+const { count, doubled } = storeToRefs(counter)
+const { increment, decrement, reset } = counter
 
 const mensaje = ref('')
 
