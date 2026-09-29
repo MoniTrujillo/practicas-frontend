@@ -1,20 +1,15 @@
 <script setup lang="ts">
-const count = ref(0)
-
-function increment() {
-  count.value++
-}
-
-function decrement() {
-  count.value--
-}
+const { count, increment, decrement, reset } = useCounter()
 </script>
 
 <template>
   <div>
     <TheTitle>Contador</TheTitle>
     <p>{{ count }}</p>
-    <button v-if="count > 0" class="rounded bg-brand px-4 py-2 text-white" @click="decrement">Decrement</button>
-    <button v-if="count < 10" class="rounded bg-brand px-4 py-2 text-white" @click="increment">Increment</button>
+    <div class="flex gap-2">
+      <button v-if="count > 0" class="rounded bg-brand px-4 py-2 text-white" @click="decrement">Decrement</button>
+      <button v-if="count < 10" class="rounded bg-brand px-4 py-2 text-white" @click="increment">Increment</button>
+      <button class="rounded bg-brand px-4 py-2 text-white" @click="reset">Reset</button>
+    </div>
   </div>
 </template>
