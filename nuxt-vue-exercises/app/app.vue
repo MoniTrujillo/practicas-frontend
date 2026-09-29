@@ -1,6 +1,5 @@
 <template>
   <NuxtLayout>
-    <h1>Preflight funcionando</h1>
-    <p>Sin márgenes por defecto.</p>
+    <TheTitle prop-title="Ejercicio 2: props" />
   </NuxtLayout>
 </template>
