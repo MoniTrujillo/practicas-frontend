@@ -1,5 +1,5 @@
 <template>
   <NuxtLayout>
-    <TheTitle>Ejercicio 3: slot</TheTitle>
+    <TheCounter />
   </NuxtLayout>
 </template>
