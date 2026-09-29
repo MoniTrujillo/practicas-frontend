@@ -4,9 +4,9 @@ export default {
     extend: {
       colors: {
         brand: {
-          DEFAULT: "#4f46e5",
+          DEFAULT: "#eb90b2",
           light: "#e0e7ff",
-          dark: "#312e81",
+          dark: "#000000",
         },
       },
       fontFamily: {
