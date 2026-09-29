@@ -19,3 +19,10 @@ pnpm install
 pnpm dev
 
 Abrir http://localhost:3000
+
+
+
+Respuesta del ejercicio 4 
+¿Hay alguna forma de mejorar el código?
+
+Sí: en lugar de escribir count++ dentro del template,usar una funcion para incrementar y decrementar.
