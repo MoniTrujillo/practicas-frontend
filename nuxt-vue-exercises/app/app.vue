@@ -1,5 +1,5 @@
 <template>
   <NuxtLayout>
-    <TheTitle prop-title="Ejercicio 2: props" />
+    <TheTitle>Ejercicio 3: slot</TheTitle>
   </NuxtLayout>
 </template>
