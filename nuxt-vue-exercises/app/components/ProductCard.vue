@@ -1,10 +1,7 @@
 <script setup lang="ts">
-defineProps<{
-  image: string
-  title: string
-  description: string
-  price: number
-}>()
+import type { Product } from '~/types/product'
+
+defineProps<Omit<Product, 'id'>>()
 </script>
 
 <template>
