@@ -1,7 +1,12 @@
 export interface Product {
   id: number
-  image: string
   title: string
-  description: string
   price: number
+  description: string
+  thumbnail: string
+  category: string
+}
+
+export interface ProductsResponse {
+  products: Product[]
 }
