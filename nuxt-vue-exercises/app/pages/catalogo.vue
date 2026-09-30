@@ -2,6 +2,8 @@
 import { products } from '~/data/mock'
 import { useCounterStore } from '~/stores/counter'
 
+definePageMeta({ layout: 'catalogo' })
+
 const counter = useCounterStore()
 </script>
 
