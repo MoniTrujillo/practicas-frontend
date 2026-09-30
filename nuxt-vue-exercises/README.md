@@ -112,3 +112,23 @@ que use fetch es más especifica y trae datos de las api encambio el otro es mas
 
 4. Abre las herramientas de desarrollo, recarga la página y mira si la petición sale del navegador o no. ¿Por qué?
 Si  porque la hizo el servidor y mandó los datos ya listos. Si
+
+
+RESPUESTAS EJERCICIO 21
+
+
+
+1.¿Por qué el SEO funciona en Nuxt y no funcionaría igual en una SPA de Vue normal?
+
+PORQUE UN SPA normal basicamente es como un mueble que tienes que armar, entonces cuando gogle pide la pagina pues tiene que armar lo que le mandas en cambio el de nux ya viene armado y es mas facil y menos tiempo que le pases tu pagina a gogle y la entienda 
+
+2.¿Qué diferencia hay entre useSeoMeta y useHead?
+
+que use head a lo que entiendo acepta todo tu le puedes poner cualquier cosa y la va a aceptar y como acepta todo pues tambien puede llegar a haber errore, en cambio usoseometa es mas facil ya que solo sirve para etiquetas de SEO y redes sociales y ya trae autocompleta
+
+3. ¿Qué hace fatal: true en createError?
+sirve para obligar a la página a mostrar la pantalla de error completa
+
+4.¿Por qué es importante devolver un 404 de verdad y no simplemente pintar "no encontrado"?
+
+porque si solo escribimos  el texto no encontrado, no solamente lo va a ver el usuario si no los robot de gogle asi que con eso pues nuestro servidor le dice que todo bien , por lo que google guardará esa página rota en su buscador y arruinarás tu SEO.

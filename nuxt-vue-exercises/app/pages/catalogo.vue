@@ -4,6 +4,11 @@ import { useCounterStore } from '~/stores/counter'
 
 definePageMeta({ layout: 'catalogo' })
 
+useSeoMeta({
+  title: 'Catálogo',
+  description: 'Catálogo de productos traídos de una API.',
+})
+
 const counter = useCounterStore()
 
 const { data, pending, error, refresh } = await useFetch<ProductsResponse>(
