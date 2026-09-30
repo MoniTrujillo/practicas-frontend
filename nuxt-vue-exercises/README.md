@@ -91,3 +91,24 @@ const counter = ref(0);
   <p v-if="counter === 10">Número, {{ counter }}</p>
 </template>
 ```
+
+
+RESPUESTAS DEL EJERCICIO 20 
+
+
+1.¿Cuándo se usa useFetch y cuándo $fetch? (Pista: uno es para cargar la página, el otro para responder a una interacción del usuario.)
+
+useFerch es a lo que e usuario tiene acceso si que lo pida o sea cargan tal cual es la informacion que ocupa ver y el otro el $fetch es la informacion que el solicita 
+
+2. Si llamas a $fetch directamente en el <script setup>, ¿qué problema tienes en SSR?
+
+a lo que entiendo si directamente pones el fetch en el script pasa que el usuario entre a la pagina entonces nux carga el html y se lo muestra al usuario porque esta pidiendo esa info, pero luego vuelve como a encontrar el setup y la carga otra vez, entonces hace la peticion dos veces y eso alenta las cosas 
+
+
+
+3.¿Qué diferencia hay entre useFetch y useAsyncData?
+
+que use fetch es más especifica y trae datos de las api encambio el otro es mas generico 
+
+4. Abre las herramientas de desarrollo, recarga la página y mira si la petición sale del navegador o no. ¿Por qué?
+Si  porque la hizo el servidor y mandó los datos ya listos. Si
